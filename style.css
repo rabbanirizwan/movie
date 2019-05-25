@@ -189,7 +189,7 @@ padding-top: 10px;
       display: flex;
       background-color: #0c1019;
       justify-content: space-around;
-     
+     padding: 23px;
   }
   .afterMedia h5{
       color:#bbb8be;;
