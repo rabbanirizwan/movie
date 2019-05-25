@@ -90,7 +90,8 @@ padding-top: 10px;
     background-color: #222222;
     color: white;
    padding: 27px;
-    
+   height: 322px;
+   overflow-y: auto;
 }
 
 .buttonAfterText{
@@ -182,6 +183,25 @@ padding-top: 10px;
   }
   .comment{
     background-color: #292c35;padding-bottom: 5px;padding-left: 5px;padding-right: 5px;
+    
+  }
+  .afterMedia{
+      display: flex;
+      background-color: #0c1019;
+      justify-content: space-around;
+     
+  }
+  .afterMedia h5{
+      color:#bbb8be;;
+  }
+  .footer{
+      display: flex;
+      justify-content: space-around;
+      color: #bbb8be;
+      background-color: #0c1019;
+      padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
   }
   @-webkit-keyframes progress-anim-1-after {
     0% {
@@ -197,6 +217,9 @@ padding-top: 10px;
           
         .animation-bar-1{
             width: 60%;
+        }
+        .afterMedia{
+            flex-wrap: wrap;
         }
         
           }
