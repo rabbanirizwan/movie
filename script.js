@@ -69,13 +69,9 @@ function random()
 
 function bottom() {
   
-  // var element = document.querySelector(".commentPortion").lastElementChild;
-  // element.className = element.className.replace(/\bmystyle\b/g, "");
-//console.log(element.className);
-// console.log(document.querySelector(".commentPortion").lastElementChild);
-document.querySelector(".commentPortion").lastElementChild.classList.remove("bottom");
+
   
-  document.querySelector( '.commentPortion' ).lastElementChild.scrollIntoView();
+  document.querySelector( '.commentPortion' ).lastElementChild.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
   // window.setTimeout( function () { top(); }, 2000 );
 };
 
