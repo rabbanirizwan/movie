@@ -15,13 +15,14 @@ padding-top: 10px;
 .navbar-brand
 {
     background-image: url(images/Logo.png);
-    height: 67px;
+    height: 45px;
     width: 165px;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .navbarClass button{
     color: white;
+    
 }
 .options{
     display: flex;
@@ -30,6 +31,9 @@ padding-top: 10px;
     color: white;
     flex-wrap: wrap;
     padding:7px;
+}
+.options a{
+    color: white;
 }
 .NHL{
     /* background-image: url(images/img1.PNG);
@@ -103,15 +107,20 @@ padding-top: 10px;
     display: none;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
-    top: 1px;
+    top: 0px;
     width: 100%;
+    transition: visibility 0s, opacity 0.5s ease;
+    
+    color: white
+    /* transition: transform 0.3s ease-in;
+    transform-origin: top bottom; */
 }
 .videoTag:hover .tagApper{
     display: block;
-    
+  
 }
 .loader{
-    display: block !important;
+    display: none !important;
     position: absolute;
                             bottom: 0px;
                             left: 0px;
@@ -150,7 +159,7 @@ padding-top: 10px;
     overflow: hidden;
     background-color: #f56982;
     background-size: 100%;
-    background-image: linear-gradient(to bottom, grey, black);
+    background-image: linear-gradient(to bottom,#4e88ba,#3176b0);
     animation: progress-anim-1 10s infinite linear;
   }
   .animation-bar-1 span:after {
@@ -174,11 +183,11 @@ padding-top: 10px;
   }
   .spin{
     background-color: rgba(0,0,0,0.9);
-    padding: 26px;
+    padding: 14px;
     color: white;
-    font-size: 62px;
-    width: 184px;
-    border-radius: 32px;
+    font-size: 30px;
+    width: 114px;
+    border-radius: 15px;
     opacity: .7;
   }
   .comment{
@@ -211,6 +220,19 @@ padding-top: 10px;
       background-position: 30px 100%;
     }
   }
+  @media screen and (min-width: 1320px) {
+    .someText{
+        width: 68%;
+    }
+    .commentPortion{
+        width: 100%;
+    }
+    .comment{
+        width: 30%;
+    }
+
+  }
+
 
 
     @media screen and (max-width: 992px) {
@@ -236,94 +258,7 @@ padding-top: 10px;
                 }
             
               }
-    
-        @media screen and (max-width: 1116px) {
-            .btn-danger {
-                top: 198px;
-                left: 387px;
-            }
+                    
+       
         
-          }
-
-      
-        @media screen and (max-width: 950px) {
-            .btn-danger {
-                top: 198px;
-                /* left: 327px; */
-            }
-
-        
-          }
-        @media screen and (max-width: 863px) {
-            .btn-danger {
-                top: 199px;
-                /* left: 327px; */
-            }
-        
-          }
-
-        @media screen and (max-width: 800px) {
-            .btn-danger {
-                top: 185px;
-                left: 355px;
-            }
-        
-          }
-
-          @media only screen and (max-width: 768px) {
-              .btn-danger{
-                top: 177px;
-                /* left: 345px; */
-              }
-          } 
-          @media only screen and (max-width: 740px) {
-            .btn-danger{
-              top: 166px;
-              left: 345px;
-            }
-        } 
-@media screen and (max-width: 700px) {
-    .btn-danger {
-        top: 147px;
-        left: 295px;
-    }
-
-  }
-
-  @media only screen and (max-width: 628px) {
-    .btn-danger{
-      top: 147px;
-      /* left: 345px; */
-    }
-} 
-  @media screen and (max-width: 600px) {
-    .btn-danger {
-        top: 126px;
-        /* left: 249px; */
-    }
-
-  }
-  @media screen and (max-width: 411px) {
-    .btn-danger {
-        top: 81px;
-        left: 188px;
-    }
-
-  }
-  @media screen and (max-width: 375px) {
-    .btn-danger {
-        top: 81px;
-        left: 158px;
-    }
-  @media screen and (max-width: 360px) {
-    .btn-danger {
-        top: 81px;
-        left: 160px;
-    }
-    @media screen and (max-width: 320px) {
-        .btn-danger {
-            top: 71px;
-            left: 129px;
-        }
-
-  }
+ 
