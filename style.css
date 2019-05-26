@@ -227,6 +227,14 @@ padding-top: 10px;
     z-index:1024;
     right: 0;
   }
+  .btn-style{
+    width: 17em;
+    height: 55px;margin-bottom: 3px;
+  }
+  .text-style{
+       max-width:373px;
+  }
+ 
   @-webkit-keyframes progress-anim-1-after {
     0% {
       background-position: 0 100%;
@@ -276,14 +284,36 @@ padding-top: 10px;
               }
               @media screen and (min-width: 1400px){
                   .videoTag{
-                    padding-left: 280px;
-                    padding-right: 280px;
+                    padding-left: 150px;
+                    padding-right: 150px;
                     padding-top: 57px;
                   }
                   .tag{
                       height: 61em;
                   }
+                  .btn-style{
+                    width: 17em;
+                    height: 65px;
+                 
+                }
+                  
               }
+
+              @media screen and (min-width: 1800px)
+              {
+                .btn-style{
+                    width: 18em;
+                    height: 65px;
+                    font-size: x-large;
+                }
+                .text-style{
+                    max-width:523px;
+               }
+               .Text{
+                   font-size: x-large;
+               }
+              }
+               
                     
        
         
