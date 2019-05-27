@@ -373,6 +373,9 @@ padding-top: 10px;
             @media screen and (max-width: 1400px) {
                 .someText{
                     width: 100%;
+                    display: flex;
+    flex-direction: column;
+    align-items: center;
                 }
                 .commentPortion{
                     width: 100%;
@@ -387,6 +390,9 @@ padding-top: 10px;
                     padding-left: 100px;
                      padding-right: 100px;
                     padding-top: 47px;
+                  }
+                  .text-style{
+                      max-width: 502px;
                   }
               }
               @media screen and (max-width: 1050px) {
