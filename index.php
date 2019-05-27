@@ -85,7 +85,7 @@
                     
                        </div>
                      
-                       <section style="display:flex; justify-content: space-between; flex-wrap: wrap">
+                       <section class="myfunction " style="display:flex; justify-content: space-between; flex-wrap: wrap">
 
                             <div class = "someText">
                                     <div class="Text">

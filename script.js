@@ -5,15 +5,17 @@ var user={
         "saddaadadasdadadLive Kentucky Derby 2019, i know Watch is the best","ok lets Watch live","greghaady no stream seems fine for me :)","This is what I wait wait , can finally live streaming with good quality and without HD video "]
 }
 var j=0;
-function appearing(){
+
+scrollDiv_init();
   
+function appearing(){
+  //bottom();
  //console.log(document.querySelector(".commentPortion").lastElementChild);
 if(j==8)
 j=0;
 
 
-  
-  
+random();
   setTimeout(function(){ 
     
      
@@ -29,24 +31,15 @@ j=0;
 </div>
 
       `;
-      // if(i==3)
-      // {
-      //   console.log("find");
-      //  document.querySelector(".commentPortion").lastElementChild.classList.add("bottom");
-      //  //console.log( document.querySelector(".commentPortion").lastElementChild.className);
-      //  console.log(document.querySelector(".commentPortion").lastElementChild);
-      // }
+     
   j++;
   console.log(j);
-    // console.log( document.querySelector(".commentPortion").lastElementChild.className);
     
     
     
-    //console.log(document.querySelector(".commentPortion").lastElementChild.className);
-    random();
+    
+   
      appearing();
-     bottom();
-     
     
   }, 5000);
 }
@@ -64,16 +57,40 @@ function S()
 }
 function random()
 {
-  document.querySelector("#numberRandom").innerHTML=Math.floor(Math.random() * 5000);
+  document.querySelector("#numberRandom").innerHTML=Math.floor(Math.random() * (8000-7500+1)+7500);
+  console.log(Math.floor(Math.random() * (8000-7500+1)+7500));
 }
 
-function bottom() {
+
+
+
+
+
+//scrollDiv_init();   
   
-
+var ScrollRate = 45;
+function scrollDiv_init() {
+  console.log("saaaa");
+  DivElmnt = document.querySelector('.commentPortion');
+  DivElmnt.onmouseover = pauseDiv;
+  DivElmnt.onmouseout = resumeDiv;
+  ReachedMaxScroll = false;
+  DivElmnt.scrollTop = 0;
+  PreviousScrollTop  = 0;
+  ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
+function scrollDiv() {
   
-  document.querySelector( '.commentPortion' ).lastElementChild.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-  // window.setTimeout( function () { top(); }, 2000 );
-};
-
-bottom();
-
+    DivElmnt.scrollTop = PreviousScrollTop;
+    PreviousScrollTop++;
+    ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+ 
+  
+}
+function pauseDiv() {
+  clearInterval(ScrollInterval);
+}
+function resumeDiv() {
+  PreviousScrollTop = DivElmnt.scrollTop;
+  ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
