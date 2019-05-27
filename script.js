@@ -44,16 +44,22 @@ random();
   }, 5000);
 }
 
-
+var s = 0;
 
 function S()
 {
-    console.log("sdasdasd");
+ 
+  console.log(s);
+  if(s==0)
+  {
     document.querySelector(".spin").style.display="none";
     document.querySelector(".spinner1").innerHTML+=`<div style="width:100px;height:100px" class="spinner-border text-primary" role="status">
   <span class="sr-only">Loading...</span>
 </div>`;
+s=1;
 
+  }
+    
 }
 function random()
 {
