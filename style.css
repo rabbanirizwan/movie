@@ -108,7 +108,7 @@ padding-top: 10px;
 .buttonAfterText{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+   justify-content: space-evenly;;
 }
 .tagApper{
     display: none;
@@ -295,6 +295,8 @@ padding-top: 10px;
       background-position: 30px 100%;
     }
   }
+
+ 
   @media screen and (min-width: 1800px)
   {
     .btn-style{
@@ -309,9 +311,14 @@ padding-top: 10px;
        font-size: x-large;
    }
    .footer{
-    font-size: xx-large;
+    font-size: x-large;
+   }
+   .nav-style{
+    display: flex;
+    justify-content: space-evenly;
    }
   }
+
   @media screen and (min-width: 1700px)
   {
     .afterMediaText{
@@ -366,6 +373,17 @@ padding-top: 10px;
     font-size: x-large;
 }
 }
+@media screen and (min-width: 2000px)
+{
+.videoTag{
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.tag{
+    height: 61em;
+}
+}
+
 
 
     
