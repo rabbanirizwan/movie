@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Document</title>
+    <title>Media</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="appearing()">
-    <nav class="navbar navbar-dark " style="background-color:#171d2b;    border-bottom: 4px solid black;padding-top: 10px;padding-bottom: 11px;">
-        <span><a class="navbar-brand"></a></span>
+    <nav class="navbar navbar-dark nav-style" >
+        <span class="mobile"><a class="navbar-brand"></a></span>
     
         <div class="navbarClass">
            <span> <a href="https://www.google.com/"><button class="btn btn-outline-warning my-sm-0" type="submit"><b>BUY TICKETS</b></button></a></span> 
@@ -48,32 +48,31 @@
                 </div>
                
                 <div class="videoTag">
-                       <div class="tag"> 
-                            <p class="tagApper animated fadeInDown delay-1s">Avengers end game</p>
+                       <div  onclick="S()"  class="tag"> 
+                            <p class="tagApper animated fadeInDown delay-.5s">Avengers end game</p>
                             <!-- <button type="button" class="btn btn-danger btn-lg "><i class="fas fa-play"></i></button> -->
                             <p style="
-                            display:flex;" class="spinner1">
-                                <button type="button" onclick="S()" class="btn spin"><i class="fas fa-play"></i></button>
+                            display:flex;" class="spinner1" >
+
+                                <div   class=" spin" data-toggle="modal" data-target="#myModal"><i class="fas fa-play"></i></div>
                             </p>
+
+
+                            
+
+
                          
-                            <div class="loader animated fadeInUp delay-1s">
-                                <button type="button" class="btn" style="background-color: red;
-                               
-                                color: black;
-                                font-size: 15px;
-                               
-                                border-radius: 8px;
-                                opacity: .5;
-                                padding-left: 20px;
-                                padding-right: 20px;"><i class="fas fa-play"></i></button>
-                             <p class="loader1">
-                                <span style="color:white">00:00:00</span><span style="color:white"><i class="fas fa-volume-down"></i></span>
+                            <div class="loader animated fadeInUp delay-.5s">
+                                    <a href="https://www.google.com/">  <i style="font-size: 30px;color:white;" class="fas fa-play"></i></a>
+   
+                          <p class="loader1">
+                                <span style="color:white">00:00:00</span><span style="color:white"><i class="fas fa-volume-down "></i></span>
                            
                             <span class="animation-bar-1">
                                 <span style="width:100%"></span>
                             </span>
                     
-                            <span style="color:white">03:01:00</span>
+                            <span style="color:white"></span>
                             <span style="color:white" ><i class="fas fa-cog"></i></span>
                             <span style="color:white"><i class="fas fa-compress-arrows-alt"></i></span>
                             </p>
@@ -85,7 +84,7 @@
                     
                        </div>
                      
-                       <section class="myfunction " style="display:flex; justify-content: space-between; flex-wrap: wrap">
+                       <section  class="section">
 
                             <div class = "someText">
                                     <div class="Text">
@@ -100,7 +99,7 @@
                                             <a href="https://www.google.com/">  <button type="button" class="btn btn-style" style="background-color:#921211; color: white;">PREMIUM STREAM HD</button></a>
                                                 <a href="https://www.google.com/">    <button type="button" class="btn btn-style" style="background-color:#76c145;color:white">HIGLIGHTS</button> </a>
                                          
-                                         <div style="display:flex;justify-content: space-evenly;">
+                                         <!-- <div style="display:flex;justify-content: space-evenly;">
                                            
                                              <p style="background-color:#e1071c;color:white;display:inline-block;padding-left: 20px;
                                              padding-right: 20px;
@@ -125,11 +124,11 @@
     
                                                            </p>
                                              
-                                         </div>
+                                         </div> -->
                                  </div>
                              </div>
                              <div  class="comment"> 
-                                <div class="commentPortion">
+                                <div class="commentPortion" >
                                     <div style="border-bottom:1px solid #7e8170;; display: flex; justify-content: space-between;">
                                         <div>
                                                 <small style="color:#1e53d8;">redwings19</small>
@@ -138,29 +137,7 @@
                                         <small style="color:#7e8170;font-size: 9px;">5 minute ago</small>
                                         
                                         </div>
-                                        <div style="border-bottom:1px solid #7e8170;; display: flex;justify-content: space-between;">
-                                                                              <div>
-                                                                                      <small style="color:#1e53d8;">viveleCH</small>
-                                                                                      <p style="max-width:272px;">Love that so many are available in HD </p>
-                                                                               </div>
-                                                                             <small style="color:#7e8170;font-size: 9px;">10 minute ago</small>
-                                                                            
-                                                                       </div>
-                                                                       <div style="border-bottom:1px solid #7e8170;; display: flex; justify-content: space-between;">
-                                                                       <div>
-                                                                               <small style="color:#1e53d8;">ecrivin</small>
-                                                                               <p style="max-width:272px;">Its work on my telly , its Cool !! </p>
-                                                                        </div>
-                                                                      <small style="color:#7e8170;font-size: 9px;">8 minute ago</small>
-                                                                     
-                                                                </div><div style="border-bottom:1px solid #7e8170;; display: flex; justify-content: space-between;">
-                                                                    <div>
-                                                                            <small style="color:#1e53d8;">redwings19</small>
-                                                                            <p style="max-width:272px;"> 10/10 WEBSITE , Fantastic Match !! would recomended this to everyone. u kiding m </p>
-                                                                     </div>
-                                                                    <small style="color:#7e8170;font-size: 9px;">5 minute ago</small>
-                                                                    
-                                                                    </div>
+                                     
                                                                     <div style="border-bottom:1px solid #7e8170;; display: flex;justify-content: space-between;">
                                                                                                           <div>
                                                                                                                   <small style="color:#1e53d8;">viveleCH</small>
@@ -193,25 +170,25 @@
                 </div>
 
                <div class="afterMedia">
-                <div style="display:flex;width: 100%;justify-content: space-evenly;">
-                    <p><img src="https://nba-streams.club/themes/imposter-sports-nba-v1/assets/images/template/nbaplay_i.svg" height="40" width="40"></p>
-                    <div style="display:flex;flex-direction:column;max-width: 300px;"><h5>STREAM FREE LIVE NFL GAMES</h5>
+                <div class="afterMediaText">
+                    <p><img src="https://nba-streams.club/themes/imposter-sports-nba-v1/assets/images/template/nbaplay_i.svg" class="img" height="40px" width="40px"></p>
+                    <div class="footerText"><h5>STREAM FREE LIVE NFL GAMES</h5>
                         <p style="color: darkgray;">Enjoy live NBA games & channels in HD/4K</p>
                     </div>
                     
                 </div>
-                <div style="display:flex;width: 100%;justify-content: space-evenly;">
-                        <p><img src="https://nba-streams.club/themes/imposter-sports-nba-v1/assets/images/template/devices_i.svg" height="40" width="40"></p>
+                <div class="afterMediaText">
+                        <p><img class="img" src="https://nba-streams.club/themes/imposter-sports-nba-v1/assets/images/template/devices_i.svg" height="40px" width="40px"></p>
                    
-                    <div style="display:flex;flex-direction: column;max-width: 300px;"> <h5>WATCH ON ANY DEVIES</h5>
+                    <div class="footerText"> <h5>WATCH ON ANY DEVIES</h5>
                     <p style="color: darkgray;">Stream on desktop,tablet and mobile devices</p>
                     </div>
                     
                     
                 </div>
-               <div style="display:flex;width: 100%;justify-content: space-evenly;">
-                    <p><img src="https://nba-streams.club/themes/imposter-sports-nba-v1/assets/images/template/record_i.svg" height="40" width="40"></p>
-                    <div style="display:flex;flex-direction: column;max-width: 300px;">
+               <div class="afterMediaText">
+                    <p><img  class="img" src="https://nba-streams.club/themes/imposter-sports-nba-v1/assets/images/template/record_i.svg" height="40px" width="40px"></p>
+                    <div class="footerText">
                             <h5>RECORD AND WATCH MATCH LATER</h5>
                             <p style="color: darkgray;">Dont' miss a game ever again</p>
                     </div>
@@ -221,26 +198,70 @@
             </div>
             <div class="footer ">
              
-                    <p style="width:40%;">All Rights reserved : LIVE STREAMING NETWORK</p>
-                    <span style="display:flex;justify-content:space-around;width:60%;">
-                        <p>HOME</p>
-                        <p>DMCA</p>
-                        <p>Privacy Policy</p>
-                        <p>Contact</p>
+                    <p>All Rights reserved : LIVE STREAMING NETWORK</p>
+                    <span>
+                        <a style="color: white;" href="https://www.google.com/">  <p>HOME</p></a>
+                            <a style="color: white;" href="https://www.google.com/">  <p>DMCA</p></a>
+                                <a  style="color: white;" href="https://www.google.com/">   <p>Privacy Policy</p></a>
+                                    <a  style="color: white;" href="https://www.google.com/">  <p>Contact</p> </a>
                     </span>
                 </div>
                
-        <div style="color:white;font-size: 30px; background-color: #171d2b;padding: 14px;
-        ">
-        <p style="padding: 15px;
+       
+        <p style="padding: 1px;font-size: 22px;color:white;
         background-color: #0c1019;" class="sticky-bottom">
                 <span><span><i class="fas fa-clock animated infinite flash delay-1s"></i></span></span>
                 <span><i id="numberRandom"></i> User Online</span>
         </p>
            
-        </div>
-               
-      
+     
+        <div class="container" >
+             
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content" style="background-color: #282c35;">
+                      <div class="modal-header" style="color: white;">
+                        
+                        <p style="width:30%;"></p><h4 class="modal-title">MEMBER LOGIN AREA</h4></p>
+                        <button style="color: whitesmoke;
+                        font-size: 33px;" type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="modalText" >You should be logged in to use this feature</p>
+                        <small style="color:white;">Watch HD Movies Online For Free and Download the latest movies. For everybody, everywhere, everydevice, and everything ;)</small>
+                        <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1"  style="color: whitesmoke;
+                                  font-size: 15px;">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                  
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1"  style="color: whitesmoke;
+                                  font-size: 15px;">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1"  style="color: whitesmoke;
+                                  font-size: 15px;">Check me out</label>
+                                </div>
+                                <a href="https://www.google.com/">   <button style="width:100%" type="submit" class="btn btn-success btn-lg">Submit</button></a>
+                              </form>  
+                              <p style="color: whitesmoke;
+                              font-size: 15px;">We're sorry, currently our movie video library can only be streamed or downloaded by members only. Please login or Sign Up For free now to access video library.</p>
+                              <p style="color: whitesmoke;
+                              font-size: 15px;">Not a member yet?   <a style="color:orange" href="https://www.google.com/"> Join now!</a></p>
+                    </div>
+                      <div class="modal-footer">
+                         
+                            <a href="https://www.google.com/">   <button style="width:100%" type="button" class="btn btn-success btn-lg" data-dismiss="modal">REGISTER</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -48,13 +48,14 @@ padding-top: 10px;
     display: flex;
     justify-content: center;
     color: white;
-  
+    border-bottom: 3px solid black;
 }
 .videoTag{
    
     display: flex;
     flex-direction: column;
-    padding: 22px;
+   padding-left: 30px;
+   padding-right: 30px;
     
     
 }
@@ -93,9 +94,8 @@ padding-top: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 20px;
-    padding-right: 20px;
     padding-top: 13px;
-    width: 68%;
+    
 }
 .commentPortion{
     background-color: #222222;
@@ -107,11 +107,12 @@ padding-top: 10px;
 
 .buttonAfterText{
     display: flex;
-    flex-direction: column;
-   justify-content: space-evenly;;
+    
+   justify-content: space-evenly;
+   width: 100%;
 }
 .tagApper{
-    display: none;
+    display: block;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     top: 0px;
@@ -127,7 +128,7 @@ padding-top: 10px;
   
 }
 .loader{
-    display: none !important;
+    display: block !important;
     position: absolute;
                             bottom: 0px;
                             left: 0px;
@@ -141,7 +142,7 @@ padding-top: 10px;
 {
     position: absolute;
                             bottom: 0;
-                            width: 97%;display: flex;justify-content: space-around;padding-left: 79px;
+                            width: 100%;display: flex;justify-content: space-around;
 }
 .videoTag:hover .loader{
     display: block !important;
@@ -189,21 +190,21 @@ padding-top: 10px;
     animation: progress-anim-1-after 2s infinite linear;
   }
   .spin{
-    background-color: rgba(0,0,0,0.9);
+    background-color: #2e99e5;
    
-    color: white;
-    font-size: 50px;
+    color: black;
+    font-size: 35px;
     
     border-radius: 15px;
     opacity: .7;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .videoTag:hover .spin{
-      background-color: white;
-      opacity: .5;
+  .tag:hover .spin{
+      background-color:red;
+   
       color: black;
   }
   .comment{
@@ -259,7 +260,7 @@ padding-top: 10px;
 
  }
  .section{
-    display:flex; justify-content: space-between; 
+    /* display:flex; justify-content: space-between;  */
  }
  .footerText{
     display:flex;flex-direction:column;max-width: 300px;
@@ -297,7 +298,7 @@ padding-top: 10px;
   }
 
  
-  @media screen and (min-width: 1800px)
+   @media screen and (min-width: 1800px)
   {
     .btn-style{
         width: 18em;
@@ -319,25 +320,13 @@ padding-top: 10px;
    }
   }
 
-  @media screen and (min-width: 1700px)
-  {
-    .afterMediaText{
-        font-size: x-large;
-    }
-
-    .img{
-        height: 100px;
-        width: 100px;
-    }
-    .footerText{
-        max-width: 400px;
-    }
-  }
+  
   @media screen and (min-width: 1400px){
     .videoTag{
       padding-left: 200px;
        padding-right: 200px;
-      padding-top: 47px;
+     
+
     }
     .tag{
         height: 41em;
@@ -349,17 +338,14 @@ padding-top: 10px;
    
   }
   .someText{
-    width: 68%;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 9em;
+    padding-right: 9em;
     padding-top: 8px;
 }
 .commentPortion{
     width: 100%;
 }
-.comment{
-    width: 30%;
-}
+
 .navbarClass button{
     font-size: x-large;
 }
@@ -373,6 +359,25 @@ padding-top: 10px;
     font-size: x-large;
 }
 }
+@media screen and (min-width: 1700px)
+  {
+    .afterMediaText{
+        font-size: x-large;
+    }
+
+    .img{
+        height: 100px;
+        width: 100px;
+    }
+    .footerText{
+        max-width: 400px;
+    }
+    .videoTag{
+        padding-left: 350px;
+        padding-right: 352px;
+        
+    }
+  }
 @media screen and (min-width: 2000px)
 {
 .videoTag{
@@ -407,7 +412,8 @@ padding-top: 10px;
                 .videoTag{
                     padding-left: 100px;
                      padding-right: 100px;
-                    padding-top: 47px;
+                  
+                     
                   }
                   .text-style{
                       max-width: 502px;
@@ -445,10 +451,15 @@ padding-top: 10px;
                .Text{
                    text-align: center;
                }
+
+               .tag{
+                   height: 20em;
+               }
                }
                @media screen and (max-width: 550px) {
               .videoTag{
-                  padding: 5px;
+                  padding-left: 5px;
+                  padding-right: 5px;
               }
               .mobile{
                 width: 100%;
@@ -488,4 +499,4 @@ padding-top: 10px;
                     
        
         
- 
+  

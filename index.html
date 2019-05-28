@@ -5,50 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Document</title>
+    <title>Media</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="appearing()">
-    <nav class="navbar navbar-dark nav-style" >
-        <span class="mobile"><a class="navbar-brand"></a></span>
-    
-        <div class="navbarClass">
-           <span> <a href="https://www.google.com/"><button class="btn btn-outline-warning my-sm-0" type="submit"><b>BUY TICKETS</b></button></a></span> 
-           <span> <a href="https://www.google.com/"><button class="btn btn-warning my-sm-0" type="submit"><b>REGISTER FREE</b></button></a></span> 
-           <span> <a href="https://www.google.com/"><button class="btn btn-outline-warning my-sm-0" type="submit"><b>SIGN IN</b></button> </a> </span> 
-          
-        </div>
-          
-
-
-      </nav>
-      <div class="options">
-          <div><a href="https://www.google.com/"> NFL</a></div>
-          <div><a href="https://www.google.com/"> MLB</a> </div>
-          <div> <a href="https://www.google.com/">NBA</a> </div>
-          <div> <a href="https://www.google.com/">NHL</a> </div>
-          <div> <a href="https://www.google.com/">WWE</a> </div>
-          <div><a href="https://www.google.com/">SOCCER</a></div>
-          <div><a href="https://www.google.com/">GOLF</a></div>
-          <div><a href="https://www.google.com/">NASCAR</a></div>
-          <div><a href="https://www.google.com/">UFC</a> </div>
-          <div><a href="https://www.google.com/">BOXING</a></div>
-          <div><a href="https://www.google.com/">F1</a> </div>
-          <div><a href="https://www.google.com/">RUGBY</a> </div>
-          <div><a href="https://www.google.com/">CRICKET</a> </div>
-          
-
-      </div>
      
             <div class="NHL">
                   <h3>WATCH NHL GAME LIVE STREAM ONLINE</h3>
                 </div>
                
                 <div class="videoTag">
-                       <div  onclick="S()"  class="tag"> 
+                       <div  onclick="S()"  data-toggle="modal" data-target="#myModal" class="tag"> 
                             <p class="tagApper animated fadeInDown delay-.5s">Avengers end game</p>
                             <!-- <button type="button" class="btn btn-danger btn-lg "><i class="fas fa-play"></i></button> -->
                             <p style="
@@ -63,10 +33,11 @@
 
                          
                             <div class="loader animated fadeInUp delay-.5s">
-                                    <a href="https://www.google.com/">  <i style="font-size: 30px;color:white;" class="fas fa-play"></i></a>
-   
+                                  
                           <p class="loader1">
-                                <span style="color:white">00:00:00</span><span style="color:white"><i class="fas fa-volume-down "></i></span>
+                            <a href="https://www.google.com/">  <i style="font-size: 30px;color:white;" class="fas fa-play"></i></a>
+       
+                            <span style="color:white">00:00:00</span><span style="color:white"><i class="fas fa-volume-down "></i></span>
                            
                             <span class="animation-bar-1">
                                 <span style="width:100%"></span>
@@ -87,18 +58,17 @@
                        <section  class="section">
 
                             <div class = "someText">
-                                    <div class="Text">
+                                    <!-- <div class="Text">
                                      <h1>Avengers: Endgame 2019
                                            </h1>
                                            <p class="text-style">
                                             After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.
                                            </p>
-                                 </div>
+                                 </div> -->
                                  <div class="buttonAfterText">
-                                        <a href="https://www.google.com/">    <button type="button" class="btn btn-style" style="background-color:#921211;color:white;">WATCH LIVE NOW</button></a>
-                                            <a href="https://www.google.com/">  <button type="button" class="btn btn-style" style="background-color:#921211; color: white;">PREMIUM STREAM HD</button></a>
-                                                <a href="https://www.google.com/">    <button type="button" class="btn btn-style" style="background-color:#76c145;color:white">HIGLIGHTS</button> </a>
-                                         
+                                        <a href="https://www.google.com/">    <button type="button" onclick="S()" class="btn btn-style" style="background-color:#921211;color:white;">WATCH LIVE NOW</button></a>
+                                            <a href="https://www.google.com/">  <button type="button" onclick="S()" class="btn btn-style" style="background-color:#921211; color: white;">PREMIUM STREAM HD</button></a>
+                                              
                                          <!-- <div style="display:flex;justify-content: space-evenly;">
                                            
                                              <p style="background-color:#e1071c;color:white;display:inline-block;padding-left: 20px;
